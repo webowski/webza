@@ -3,7 +3,6 @@
 :root {
 	color-scheme: light;
 
-	// --fontSize:             .9375rem;
 	--fontSize:             1rem;
 	--lineHeight:           var(--leading-2xl);
 
@@ -40,8 +39,8 @@
 
 	--inverse:              var(--white);
 
-	--brand:                var(--yellow);
-	--accent:               var(--yellow-600);
+	--brand:                var(--blue);
+	--accent:               var(--blue);
 	--voice:                var(--blue);
 	--success:              var(--green);
 	--danger:               var(--red);
@@ -87,5 +86,4 @@
 	--bg-400:               var(--black-400);
 	--bg:                   var(--blackest);
 	--bg-alt:               --alpha(var(--white) / 2%);
-	// --bg-alt:               hsl(297, 50%, 30%);
 }
