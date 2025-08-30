@@ -1,6 +1,6 @@
 <?php
 add_filter('body_class', function($classes) {
-	$classes[] = 'g-headerHidden';
+	// $classes[] = 'g-headerHidden';
 	return $classes;
 });
 get_header(); ?>
