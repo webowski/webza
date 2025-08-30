@@ -1,8 +1,8 @@
 <section class="Section pb-10" id="features">
 
 	<picture class="PageDecor inset-0 h-full opacity-40" aria-hidden="true">
-		<source srcset="<?php the_template_uri() ?>/images/decor.svg" media="(max-width: 800px)">
-		<img class="max-md:object-cover object-top" src="<?php the_template_uri() ?>/images/decor.svg" alt="">
+		<source srcset="<?php the_template_uri() ?>/images/bg-gradient.svg" media="(max-width: 800px)">
+		<img class="max-md:object-cover object-top" src="<?php the_template_uri() ?>/images/bg-gradient.svg" alt="">
 	</picture>
 
 	<div class="container">

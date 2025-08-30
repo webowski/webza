@@ -12,9 +12,9 @@
 	gap: 10px;
 	border: 0;
 	appearance: none;
-	background: var(--accent) none;
-	color: var(--inverse);
-	border-radius: 40px;
+	background: var(--voice) none;
+	color: var(--whitest);
+	border-radius: var(--radius-sm);
 	font-size: var(--text-md);
 	line-height: var(--leading-lg);
 	font-weight: 600;
@@ -33,11 +33,7 @@
 		box-shadow var(--duration-md),
 		transform var(--duration-sm);
 	will-change: transform;
-	box-shadow: 0px 7px 12px rgba(100, 100, 0, 0.12);
-
-	[data-theme="dark"] & {
-		color: var(--inverse);
-	}
+	box-shadow: 0px 7px 12px --alpha(var(--voice) / 12%);
 
 	@media (min-width: $md) {
 		padding: 10px 28px;

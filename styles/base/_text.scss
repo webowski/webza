@@ -18,12 +18,12 @@ body {
 }
 
 ::-moz-selection {
-	color: var(--black);
+	color: var(--inverse);
 	background-color: var(--brand);
 	text-decoration-color: transparent;
 }
 ::selection {
-	color: var(--black);
+	color: var(--inverse);
 	background-color: var(--brand);
 	text-decoration-color: transparent;
 }
@@ -98,7 +98,6 @@ h1, .h1 {
 
 h2, .h2 {
 	line-height: var(--leading-md);
-	text-transform: lowercase;
 	font-size: clamp(1.5rem, 3vw, 1.875rem);
 	font-weight: 900;
 }

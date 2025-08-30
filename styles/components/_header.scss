@@ -103,17 +103,12 @@ body.g-headerHidden .Header {
 	flex-shrink: 0;
 
 	@media ($md <= width) {
-		width: 67px;
+		width: 40px;
 	}
 }
 
-.SiteLogo img,
 .SiteLogo svg {
 	display: block;
-	width: 100%;
-}
-
-.SiteLogo svg {
 	fill: var(--intense);
 	width: 100%;
 	max-width: 100%;

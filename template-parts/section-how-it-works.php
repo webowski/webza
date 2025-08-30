@@ -1,7 +1,7 @@
-<section class="Section -screen flex flex-col items-center justify-center w-[100%]" id="sequence">
+<section class="Section -screen h-screen_ h-before-footer flex flex-col items-center justify-center w-[100%]" id="sequence">
 
 	<div class="container max-w-180 mb-8">
-		<h2 class="sm:text-center"><?= __('Website creation sequence', 'webowski') ?></h2>
+		<h2 class="sm:text-center"><?= pll__('How it works') ?></h2>
 	</div>
 
 	<div class="Slider px-(--padding-x) max-w-200"

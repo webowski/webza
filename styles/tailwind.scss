@@ -59,6 +59,9 @@
 
 	--spacing-section: clamp(3.5rem, 7vw, 5rem);
 
+	--spacing-screen: calc(100svh - var(--header-height));
+	--spacing-before-footer: min(calc(100svh - var(--footer-height) - var(--header-height)), 690px);
+
 	--leading-\*: initial;
 	--leading-xs: 1;
 	--leading-sm: 1.125;

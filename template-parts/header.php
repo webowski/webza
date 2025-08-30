@@ -2,7 +2,7 @@
 
 	<a href="/" class="SiteBrand do-scrollTop justify-self-start">
 		<svg class="SiteLogo" width="64" height="64" viewBox="0 0 64 64">
-			<rect x="0" y="0" width="64" height="64" rx="8" ry="8" fill="#444"/>
+			<rect x="0" y="0" width="64" height="64" rx="64" ry="64" fill="var(--brand)"/>
 		</svg>
 	</a>
 
