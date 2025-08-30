@@ -6,11 +6,14 @@
 		</svg>
 	</a>
 
-	<nav id="site-navigation" class="NavMain -inHeader">
+	<nav id="site-navigation" class="NavMain do-spy" aria-label="<?php pll_e("Main menu") ?>">
 		<?php
 		wp_nav_menu([
-			'theme_location' => 'menu-inner',
-			'menu_id'        => 'primary-menu',
+			'theme_location' => 'menu-inner-page',
+			'menu_id' => 'primary-menu',
+			'container' => 'ul',
+			'container_class' => false,
+			'menu_class' => false,
 		]);
 		?>
 	</nav>
@@ -44,8 +47,11 @@
 
 	<div class="NavMain -mobile">
 		<?php wp_nav_menu([
-			'theme_location' => 'menu-inner',
-			'menu_id'        => 'primary-menu-mobile',
+			'theme_location' => 'menu-inner-page',
+			'menu_id' => 'primary-menu-mobile',
+			'container' => 'ul',
+			'container_class' => false,
+			'menu_class' => false,
 		]); ?>
 	</div>
 

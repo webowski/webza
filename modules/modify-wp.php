@@ -19,6 +19,28 @@ add_action( 'wp_loaded', function () {
 });
 
 
+/**
+ * Menu
+ */
+add_filter( 'nav_menu_css_class', function( $classes, $item, $args, $depth ) {
+	$allowed = [
+		'menu-item',
+		// 'menu-item-type-post_type',
+		// 'menu-item-object-page',
+		'current-menu-item',
+		// 'page_item',
+		// 'page-item-2',
+		// 'current_page_item',
+		// 'menu-item-37',
+	];
+
+	return array_intersect( $classes, $allowed );
+}, 10, 4 );
+
+add_filter( 'nav_menu_item_id', '__return_empty_string' );
+add_filter( 'nav_menu_id', '__return_empty_string' );
+
+
 // define ('WPCF7_AUTOP', false );
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 

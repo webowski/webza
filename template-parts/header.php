@@ -9,8 +9,11 @@
 	<nav id="site-navigation" class="NavMain do-spy" aria-label="<?php pll_e("Main menu") ?>">
 		<?php
 		wp_nav_menu([
-			'theme_location' => 'menu-1',
-			'menu_id'        => 'primary-menu',
+			'theme_location' => 'menu-front-page',
+			'menu_id' => 'primary-menu',
+			'container' => 'ul',
+			'container_class' => false,
+			'menu_class' => false,
 		]);
 		?>
 	</nav>
@@ -45,8 +48,11 @@
 	<div class="NavMain do-spy -mobile">
 		<?php
 		wp_nav_menu([
-			'theme_location' => 'menu-1',
-			'menu_id'        => 'primary-menu-mobile',
+			'theme_location' => 'menu-front-page',
+			'menu_id' => 'primary-menu-mobile',
+			'container' => 'ul',
+			'container_class' => false,
+			'menu_class' => false,
 		]);
 		?>
 	</div>

@@ -20,8 +20,8 @@ if ( ! function_exists( 'webowski_setup' ) ) :
 		]);
 
 		register_nav_menus([
-			'menu-1' => esc_html__( 'Primary', 'webowski' ),
-			'menu-inner' => esc_html__( 'Inner menu place', 'webowski' ),
+			'menu-front-page' => esc_html__( 'Front page', 'webowski' ),
+			'menu-inner-page' => esc_html__( 'Inner page', 'webowski' ),
 		]);
 	}
 endif;
