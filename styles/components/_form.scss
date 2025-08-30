@@ -2,7 +2,6 @@
 @use "sass:color";
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
-@use "../base/mediaqueries" as *;
 
 .FormInput {
 	width: 100%;
@@ -51,7 +50,7 @@ textarea.FormInput {
 	field-sizing: content;
 	line-height: inherit;
 
-	@include mediaUp(md) {
+	@media ($md <= width) {
 		min-height: 124px;
 		max-height: 200px;
 	}
@@ -290,7 +289,7 @@ textarea.FormInput {
 // 		color var(--duration-sm) linear,
 // 		transform var(--duration-sm) linear;
 
-// 	// @include mediaUp(md) {
+// 	// @media ($md <= width) {
 // 	// 	font-size: 15px;
 // 	// 	line-height: 18px;
 // 	// }
@@ -368,7 +367,7 @@ textarea.FormInput {
 // 		}
 // 	}
 
-// 	@include mediaUp(md) {
+// 	@media ($md <= width) {
 
 // 		.FormLabel {
 // 			left: 11px;

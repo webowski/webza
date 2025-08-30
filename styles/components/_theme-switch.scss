@@ -2,7 +2,7 @@
 @use "sass:color";
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
-@use "../base/mediaqueries" as *;
+
 
 .ThemeSwitch {
 	width: 40px;
@@ -17,7 +17,7 @@
 	margin-right: 0;
 	margin-left: auto;
 
-	@include mediaUp(md) {
+	@media ($md <= width) {
 		margin-left: 10px;
 	}
 }

@@ -1,6 +1,5 @@
 @use "variables" as *;
 @use "mixins" as *;
-@use "mediaqueries" as *;
 
 html {
 	-webkit-text-size-adjust: none;
@@ -168,7 +167,7 @@ blockquote {
 	color: var(--intense);
 	font-weight: 500;
 
-	@include mediaUp(md) {
+	@media ($md <= width) {
 		max-width: 750px;
 		padding-top: 8px;
 		padding-bottom: 8px;

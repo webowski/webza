@@ -2,7 +2,7 @@
 @use "sass:color";
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
-@use "../base/mediaqueries" as *;
+
 
 .Section {
 	--section-padding-y: clamp(3.5rem, 7vw, 5rem);

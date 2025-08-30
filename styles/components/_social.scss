@@ -10,7 +10,7 @@
 	margin-right: 3px;
 }
 
-@include mediaUp(md) {
+@media ($md <= width) {
 	.SocialSet {
 		margin-left: -4px;
 		margin-right: -4px;
