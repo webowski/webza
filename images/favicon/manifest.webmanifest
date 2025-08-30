@@ -1,5 +1,5 @@
 {
-  "name": "Bolshoy Webowski",
+  "name": "Webza",
   "short_name": "App",
   "description": "Минимальный набор иконок",
   "dir": "auto",
@@ -7,23 +7,23 @@
   "display": "standalone",
   "orientation": "any",
   "start_url": "/?homescreen=1",
-  "background_color": "#FFFF2F",
-  "theme_color": "#FFFF2F",
+  "background_color": "transparent",
+  "theme_color": "transparent",
   "icons": [
     {
-      "src": "/wp-content/themes/webowski/images/favicon/android-chrome-144x144.png",
+      "src": "/wp-content/themes/webza/images/favicon/android-chrome-144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/wp-content/themes/webowski/images/favicon/android-chrome-192x192.png",
+      "src": "/wp-content/themes/webza/images/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/wp-content/themes/webowski/images/favicon/android-chrome-512x512.png",
+      "src": "/wp-content/themes/webza/images/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

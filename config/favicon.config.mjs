@@ -7,8 +7,8 @@ export default {
   appDescription: "Минимальный набор иконок",
   developerName: null,
   developerURL: null,
-  background: "#FFFF2F",
-  theme_color: "#FFFF2F",
+  background: "transparent",
+  theme_color: "transparent",
   icons: {
     favicons: false,
     favicons: {
