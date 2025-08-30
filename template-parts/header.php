@@ -1,8 +1,8 @@
 <header class="Header">
 
 	<a href="/" class="SiteBrand do-scrollTop justify-self-start">
-		<svg class="SiteLogo" viewBox="0 0 600 200" width="100%" height="200">
-			<text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="48" fill="#111">LOGO</text>
+		<svg width="64" height="64" viewBox="0 0 64 64">
+			<rect x="0" y="0" width="64" height="64" rx="8" ry="8" fill="#444"/>
 		</svg>
 	</a>
 

@@ -1,7 +1,9 @@
 <header class="Header -static">
 
 	<a href="<?= esc_url( pll_home_url() ); ?>" class="SiteLogo justify-self-start">
-		LOGO
+		<svg width="64" height="64" viewBox="0 0 64 64">
+			<rect x="0" y="0" width="64" height="64" rx="8" ry="8" fill="#444"/>
+		</svg>
 	</a>
 
 	<nav id="site-navigation" class="NavMain -inHeader">
