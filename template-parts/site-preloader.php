@@ -78,7 +78,7 @@
 <div class="SitePreloader">
 	<div class="SitePreloader__brand">
 
-		webza
+		<!-- webza -->
 
 	</div>
 </div>
@@ -93,7 +93,7 @@
 				setTimeout(() => {
 					$intro.classList.add('is-hidden')
 				}, 15)
-			}, 1800)
+			}, 15)
 
 		}, 15)
 	})
