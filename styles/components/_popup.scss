@@ -3,7 +3,6 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 @use "../base/mediaqueries" as *;
-@use '../../node_modules/basiclightbox/src/styles/main.scss';
 
 .PopupOrigin {
     position: fixed;
@@ -39,35 +38,6 @@
 	@media (min-width: 400px) {
 		flex-direction: row;
 	}
-}
-
-.basicLightbox {
-	background-color: transparent;
-	opacity: 1;
-	transition:
-		background-color var(--duration-lg);
-	will-change: background-color;
-}
-
-.basicLightbox--visible {
-	background-color: rgba(#000, .62);
-}
-
-.basicLightbox--visible {
-	background-color: rgba(#000, .62);
-}
-
-.basicLightbox__placeholder {
-	transform: scale(.7);
-	opacity: 0;
-	transition:
-		opacity var(--duration-lg),
-		transform var(--duration-lg);
-}
-
-.basicLightbox--visible .basicLightbox__placeholder {
-	transform: scale(1);
-	opacity: 1;
 }
 
 .Popup {
