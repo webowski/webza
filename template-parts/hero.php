@@ -1,15 +1,15 @@
 <div class="Hero">
 
-	<div class="Hero__bg">
+	<!-- <div class="Hero__bg">
 		<?php the_post_thumbnail('full') ?>
-	</div>
+	</div> -->
 
 	<div class="Hero__container grid grid-rows-[auto_1fr_auto]">
 		<div class="grid grid-cols-[1fr_auto_1fr] items-start">
 
 			<div class="flex items-center gap-8 grow-1">
-				<label class="ThemeSwitch is-switched max-md:hidden">
-					<input type="checkbox" checked name="themeDark">
+				<label class="ThemeSwitch max-md:hidden">
+					<input type="checkbox" name="themeDark">
 					<span></span>
 				</label>
 
