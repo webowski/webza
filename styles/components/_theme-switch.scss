@@ -13,15 +13,6 @@
 	cursor: pointer;
 }
 
-.Header .ThemeSwitch {
-	margin-right: 0;
-	margin-left: auto;
-
-	@media ($md <= width) {
-		margin-left: 10px;
-	}
-}
-
 .ThemeSwitch:focus-within:focus-visible {
 	// outline: -webkit-focus-ring-color auto 1px;
 }

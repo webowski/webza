@@ -4,36 +4,7 @@
 		<?php the_post_thumbnail('full') ?>
 	</div> -->
 
-	<div class="Hero__container grid grid-rows-[auto_1fr_auto]">
-		<div class="grid grid-cols-[1fr_auto_1fr] items-start">
-
-			<div class="flex items-center gap-8 grow-1">
-				<label class="ThemeSwitch max-md:hidden">
-					<input type="checkbox" name="themeDark">
-					<span></span>
-				</label>
-
-				<ul class="LangSwitch max-md:hidden">
-					<?php pll_the_languages(['hide_if_empty' => 0]); ?>
-				</ul>
-			</div>
-
-			<div class="flex gap-8 items-center justify-end grow-1">
-				<a href="&#104;&#116;&#116;ps:&#47;&#47;t.&#109;e&#47;<?= get_option('contact-telegram') ?>" target="_blank" title="Telegram" class="max-md:hidden IconLink text-(--major) hover:text-primary">
-					<svg class="Icon rect-7/7">
-						<use href="#icon-telegram">
-					</svg>
-				</a>
-
-				<button class="NavOpener">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-
-		</div>
+	<div class="Hero__container grid grid-rows-[1fr]">
 		<div class="py-8 lg:pt-20 lg:pb-8 grid grid-cols-[1fr] lg:grid-cols-[1.15fr_.85fr] xl:grid-cols-[1.05fr_.95fr] items-end place-content-center gap-4 max-md:self-end">
 
 			<div class="flex gap-3 lg:gap-4 flex-col">
