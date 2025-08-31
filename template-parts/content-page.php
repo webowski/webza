@@ -1,7 +1,7 @@
 <article class="Section -beforeFooter">
 
 	<div class="PageDecorOrigin" aria-hidden="true">
-		<img class="Section__decor w-110 -right-40 -scale-x-100" src="<?php the_template_uri() ?>/images/.svg" alt="">
+		<img class="Section__decor w-110 -right-40 -scale-x-100" src="<?php the_template_uri() ?>/images/paporotnik.svg" alt="">
 	</div>
 
 	<div class="container max-w-170">

@@ -1,7 +1,7 @@
 <section class="Section -beforeFooter bg-alter flex items-center" id="contacts">
 
 	<div class="PageDecorOrigin">
-		<img class="Section__decor w-110 -left-50" src="<?php the_template_uri() ?>/images/.svg" alt="">
+		<img class="Section__decor w-110 -left-50" src="<?php the_template_uri() ?>/images/paporotnik.svg" alt="">
 	</div>
 
 	<div class="container">
