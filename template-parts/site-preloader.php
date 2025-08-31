@@ -1,4 +1,14 @@
 <style>
+	:root {
+		color-scheme: light;
+		--preloader-bg: #fff;
+	}
+
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+		--preloader-bg: hsl(240, 20%, 13%);
+	}
+
 	.SitePreloader {
 		z-index: 1100;
 		position: fixed;
@@ -12,7 +22,7 @@
 		align-items: center;
 		justify-content: center;
 
-		background: #fcfcff;
+		background-color: var(--preloader-bg);
 		transition: opacity 0.4s cubic-bezier(.5,0,.4,1) 0.1s;
 		opacity: 1;
 	}
