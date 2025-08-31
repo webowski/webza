@@ -6,7 +6,7 @@
 		</svg>
 	</a>
 
-	<nav id="site-navigation" class="NavMain do-spy" aria-label="<?php pll_e("Main menu") ?>">
+	<nav id="site-navigation" class="NavMain do-spy" aria-label="<?= __('Main menu', 'webza') ?>">
 		<?php
 		wp_nav_menu([
 			'theme_location' => 'menu-front-page',
@@ -27,9 +27,11 @@
 			</a>
 		</div>
 
+		<?php if ( function_exists('pll_the_languages') ): ?>
 		<ul class="LangSwitch max-md:hidden">
-			<?php pll_the_languages(['hide_if_empty' => 0]); ?>
+			<?php pll_the_languages(['hide_if_empty' => 0]) ?>
 		</ul>
+		<?php endif ?>
 
 		<label class="ThemeSwitch max-md:hidden">
 			<input type="checkbox" name="themeDark">
@@ -37,7 +39,7 @@
 		</label>
 	</div>
 
-	<button class="NavOpener" aria-controls="primary-menu-mobile" aria-label="<?php pll_e("Open the mobile navigation") ?>" aria-expanded="false">
+	<button class="NavOpener" aria-controls="primary-menu-mobile" aria-label="<?= __('Open the mobile navigation', 'webza') ?>" aria-expanded="false">
 		<span></span>
 		<span></span>
 		<span></span>
@@ -46,7 +48,7 @@
 
 </header>
 
-<nav class="NavMobile" aria-label="<?php pll_e("Mobile navigation") ?>">
+<nav class="NavMobile" aria-label="<?= __('Mobile navigation', 'webza') ?>">
 
 	<div class="flex gap-8 items-center grow-1">
 		<a class="IconLink text-(--major) hover:text-primary do-notCloseNav" href="&#104;&#116;&#116;ps:&#47;&#47;t.&#109;e&#47;<?= get_option('contact-telegram') ?>" target="_blank" title="Telegram">
@@ -69,13 +71,18 @@
 	</div>
 
 	<div class="flex gap-8 items-center">
+
+		<?php if ( function_exists('pll_the_languages') ): ?>
 		<ul class="LangSwitch do-notCloseNav">
 			<?php pll_the_languages(['hide_if_empty' => 0]); ?>
 		</ul>
+		<?php endif ?>
+
 		<label class="ThemeSwitch is-switched">
 			<input type="checkbox" checked name="themeDark">
 			<span></span>
 		</label>
+
 	</div>
 
 </nav>

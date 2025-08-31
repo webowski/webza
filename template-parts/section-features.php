@@ -7,7 +7,7 @@
 
 	<div class="container">
 
-		<h2 class="mb-12"><?php pll_e('Features')?></h2>
+		<h2 class="mb-12"><?= __('Features', 'webza') ?></h2>
 
 		<div class="grid md:grid-cols-2 grid-colum items-start gap-14">
 			<div class="grid gap-12">

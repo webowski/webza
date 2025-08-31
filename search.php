@@ -9,7 +9,7 @@ get_header();
 
 			<h1 class="page-title"><?php
 				printf(
-					pll__( 'Search Results for: %s', 'webowski' ),
+					pll__( 'Search Results for: %s', 'webza' ),
 					get_search_query()
 				);
 			?></h1>

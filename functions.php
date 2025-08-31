@@ -3,7 +3,7 @@
 if ( ! function_exists( 'webowski_setup' ) ) :
 	function webowski_setup() {
 
-		load_theme_textdomain( 'webowski', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'webza', get_template_directory() . '/languages' );
 
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
@@ -20,13 +20,17 @@ if ( ! function_exists( 'webowski_setup' ) ) :
 		]);
 
 		register_nav_menus([
-			'menu-front-page' => esc_html__( 'Front page', 'webowski' ),
-			'menu-inner-page' => esc_html__( 'Inner page', 'webowski' ),
+			'menu-front-page' => esc_html__( 'Front page', 'webza' ),
+			'menu-inner-page' => esc_html__( 'Inner page', 'webza' ),
 		]);
 	}
 endif;
 // after_setup_theme hook runs before the init hook. The init hook is too late for some features, such as indicating support for post thumbnails
 add_action( 'after_setup_theme', 'webowski_setup' );
+
+add_action( 'admin_init', function() {
+	load_theme_textdomain( 'webza', get_template_directory() . '/languages' );
+});
 
 /**
  * Manage urls

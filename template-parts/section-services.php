@@ -1,7 +1,7 @@
 <section class="Section pb-10 overflow-x-hidden" id="services">
 
 	<div class="container max-w-230 mb-8">
-		<h2 class="sm:text-center"><?php pll_e('Website creation services') ?></h2>
+		<h2 class="sm:text-center"><?= __('Services', 'webza') ?></h2>
 	</div>
 
 	<div class="Slider -hideOnStart container"
@@ -92,7 +92,7 @@
 	</div>
 
 	<div class="container gap-5 mt-10 flex justify-center items-center max-sm:flex-col">
-		<a href="" class="Button"><?php pll_e("Order") ?></a>
+		<a href="" class="Button"><?= __('Order', 'webza') ?></a>
 	</div>
 
 </section>

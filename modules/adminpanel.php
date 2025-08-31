@@ -26,7 +26,7 @@ add_action('admin_enqueue_scripts', 'my_custom_inline_admin_styles');
 function webowski_meta_box() {
 	add_meta_box(
 		'global-notice',
-		__( 'Параметры проекта', 'webowski' ),
+		__( 'Project parameters', 'webza' ),
 		'webowski_meta_box_callback',
 		'project'
 	);

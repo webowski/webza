@@ -1,7 +1,7 @@
 <section class="Section -screen h-screen_ h-before-footer flex flex-col items-center justify-center w-[100%]" id="sequence">
 
 	<div class="container max-w-180 mb-8">
-		<h2 class="sm:text-center"><?= pll__('How it works') ?></h2>
+		<h2 class="sm:text-center"><?= __('How it works', 'webza') ?></h2>
 	</div>
 
 	<div class="Slider px-(--padding-x) max-w-200"
@@ -25,7 +25,7 @@
 						<div class="Step__inner">
 
 							<h3 class="mb-[.875em] text-shadow font-extrabold border-s-4 pl-3 border-accent text-trim">
-								<span class="font-normal text-md block text-major"><?php echo __('Step', 'webowski') ?> <?= $i ?>.</span>
+								<span class="font-normal text-md block text-major"><?= __('Step', 'webza') ?> <?= $i ?>.</span>
 								<span class=""><?php echo strip_tags(get_the_title()) ?></span>
 							</h3>
 							<?php the_content() ?>
@@ -58,7 +58,7 @@
 <div class="Section pt-0">
 	<div class="container w-[stretch] flex gap-5 sm:gap-2 max-sm:flex-wrap justify-center items-center">
 
-		<a href="" class="Button max-w-50 w-full"><?php pll_e("Order") ?></a>
+		<a href="" class="Button max-w-50 w-full"><?= __('Order', 'webza') ?></a>
 
 	</div>
 </div>

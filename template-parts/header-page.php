@@ -6,7 +6,7 @@
 		</svg>
 	</a>
 
-	<nav id="site-navigation" class="NavMain do-spy" aria-label="<?php pll_e("Main menu") ?>">
+	<nav id="site-navigation" class="NavMain do-spy" aria-label="<?= __('Main menu', 'webza') ?>">
 		<?php
 		wp_nav_menu([
 			'theme_location' => 'menu-inner-page',
@@ -44,7 +44,7 @@
 
 </header>
 
-<nav class="NavMobile" aria-label="<?php pll_e("Mobile navigation") ?>">
+<nav class="NavMobile" aria-label="<?= __('Mobile navigation', 'webza') ?>">
 
 	<div class="flex gap-8 items-center grow-1">
 		<a class="IconLink text-(--major) hover:text-primary do-notCloseNav" href="&#104;&#116;&#116;ps:&#47;&#47;t.&#109;e&#47;" target="_blank" title="Telegram">

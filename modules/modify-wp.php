@@ -189,7 +189,7 @@ add_filter('body_class', 'webowski_body_classes', 10, 2);
 
 function webowski_body_classes( $wp_classes, $extra_classes ) {
 
-	if (get_option('webowski_remove_id_classes')) return $wp_classes;
+	if ( !get_option('webowski_remove_id_classes')) return $wp_classes;
 
 	$blacklist = [
 		"home",

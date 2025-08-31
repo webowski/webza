@@ -1,6 +1,6 @@
 <section class="Section pb-10 overflow-x-hidden" id="examples">
 	<div class="container mb-6">
-		<h2 class="sm:text-center"><?php pll_e('Examples of my work')?></h2>
+		<h2 class="sm:text-center"><?= __('Examples', 'webza') ?></h2>
 	</div>
 
 	<div class="Slider"

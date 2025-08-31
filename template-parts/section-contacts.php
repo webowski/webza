@@ -6,7 +6,7 @@
 
 	<div class="container">
 
-		<h2 class="text-center mb-10"><?php pll_e('Contacts') ?></h2>
+		<h2 class="text-center mb-10"><?= __('Contacts', 'webza') ?></h2>
 
 		<p class="sm:text-center mb-8">Write to me on Telegram <a href="https://t.me/<?= get_option('contact-telegram') ?>">@<?= get_option('contact-telegram') ?></a> or by email <a href="mailto:email@email.com">email@email.com</a></p>
 

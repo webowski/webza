@@ -47,7 +47,7 @@ function webowski_customize_register( $wp_customize ) {
 	]);
 	$wp_customize->add_control( 'theme-color', [
 		'section'  => 'colors',
-		'label'    => __( 'Значение метатега theme-color в <head>', 'webowski' ),
+		'label'    => __( 'The value of the theme-color meta tag in <head>', 'webza' ),
 		'type'     => 'text',
 	]);
 
@@ -56,7 +56,7 @@ function webowski_customize_register( $wp_customize ) {
 	 * Metrics Scripts
 	 */
 	$wp_customize->add_section('webowski_head_scripts_section', array(
-			'title'    => __('Вставка скриптов', 'webowski'),
+			'title'    => __('Вставка скриптов', 'webza'),
 			'priority' => 160,
 	));
 	$wp_customize->add_setting('webowski_head_scripts_code', array(
@@ -68,7 +68,7 @@ function webowski_customize_register( $wp_customize ) {
         $wp_customize,
         'webowski_head_scripts_code',
         array(
-            'label'    => __('Скрипты в <head>', 'webowski'),
+            'label'    => __('Скрипты в <head>', 'webza'),
             'section'  => 'webowski_head_scripts_section',
             'settings' => 'webowski_head_scripts_code',
         )
