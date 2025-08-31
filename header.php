@@ -28,6 +28,8 @@
 <body <?php body_class('g-disableTransitions'); ?>>
 	<?php wp_body_open(); ?>
 
+	<a class="skip-to-content" href="#main-content"><?= __("Skip to content", "webza") ?></a>
+
 	<?php get_template_part( 'template-parts/site-preloader' ); ?>
 
 	<div class="Wrap">

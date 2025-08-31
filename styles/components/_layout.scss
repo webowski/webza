@@ -51,3 +51,23 @@ body.G-navOverlay {
 		transition: opacity .3s ease-out;
 	}
 }
+
+.skip-to-content {
+	position: absolute;
+	left: -999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.skip-to-content:focus {
+	left: 1rem;
+	top: 1rem;
+	width: auto;
+	height: auto;
+	background: var(--accent);
+	color: var(--white);
+	padding: 0.5rem 1rem;
+	z-index: 1000;
+}
