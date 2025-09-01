@@ -24,11 +24,10 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<?php
-				$args = array(
+				$loop = new WP_Query([
 					'post_type'      => 'service',
 					'posts_per_page' => -1,
-				);
-				$loop = new WP_Query( $args );
+				]);
 
 				while ( $loop->have_posts() ) :
 					$loop->the_post();

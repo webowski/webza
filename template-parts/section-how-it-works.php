@@ -13,13 +13,13 @@
 		<div class="swiper-container overflow-hidden">
 			<div class="swiper-wrapper">
 				<?php
-				$args = array(
+				$loop = new WP_Query([
 					'post_type'      => 'step',
 					'posts_per_page' => -1,
 					'order'          => 'ASC',
-				);
-				$loop = new WP_Query( $args );
+				]);
 				$i = 1;
+
 				while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="swiper-slide Step">
 						<div class="Step__inner">

@@ -19,12 +19,10 @@
 			<div class="swiper-wrapper ExampleSet container px-0">
 
 				<?php
-				$args = array(
+				$loop = new WP_Query([
 					'post_type'      => 'project',
 					'posts_per_page' => -1,
-				);
-
-				$loop = new WP_Query( $args );
+				]);
 
 				while ( $loop->have_posts() ) : $loop->the_post();
 					?>
