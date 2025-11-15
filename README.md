@@ -1,7 +1,7 @@
 # Webza Boilerplate
 
 ## Features
-Uses PHP as templating syntax for SSG.
+Uses PHP as templating syntax for html pages generation
 
 ## Requirements
 PHP 8 or higher
