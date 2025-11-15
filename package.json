@@ -1,0 +1,30 @@
+{
+	"name": "webza",
+	"version": "0.0.1",
+	"scripts": {
+		"generate:widgets": "node package-scripts/generate-widget-imports.js",
+		"build:sprite": "node package-scripts/build-sprite.js",
+		"dev": "npm run generate:widgets && npm run build:sprite && concurrently \"vite\" \"php -S localhost:8000 -t public build/dev-server.php\"",
+		"build:assets": "npm run generate:widgets && npm run build:sprite && vite build",
+		"build:php": "php build/generate-html.php",
+		"build": "npm run build:assets && npm run build:php",
+		"lint": "eslint \"src/**/*.{ts,js}\"",
+		"format": "prettier --write \"**/*.{ts,js,json,css,scss,php,md}\""
+	},
+	"devDependencies": {
+		"vite": "^6.0.0",
+		"typescript": "^5.4.0",
+		"sass": "^1.77.0",
+		"autoprefixer": "^10.4.18",
+		"postcss": "^8.4.35",
+		"eslint": "^8.0.0",
+		"prettier": "^2.8.8",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"@typescript-eslint/parser": "^5.59.3",
+		"@typescript-eslint/eslint-plugin": "^5.59.3",
+		"concurrently": "^8.2.0",
+		"vite-plugin-live-reload": "^1.0.0",
+		"glob": "^10.3.3"
+	}
+}
